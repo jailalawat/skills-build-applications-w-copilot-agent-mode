@@ -43,4 +43,5 @@ def api_root(request):
 urlpatterns = [
     path('', api_root, name='api_root'),
     path('api/', include(router.urls)),
+    path('admin/', admin.site.urls)
 ]
